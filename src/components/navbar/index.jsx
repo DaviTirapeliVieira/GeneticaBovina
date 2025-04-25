@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <header className="header">
       <a href="/" className="logo">
-        Genetica Bovina
+        Genética Bovina
       </a>
       <ul className="navbar">
         <li><a href="#inicio">Inicio</a></li>

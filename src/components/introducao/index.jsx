@@ -32,7 +32,7 @@ export default function Introducao() {
         className="content"
         style={{ flex: 1, padding: "20px", maxWidth: "50%" }}
       >
-        <h3 className="titulo">Genetica</h3>
+        <h3 className="titulo">Genética</h3>
         <p className="introducao">
           A Genética é o ramo da biologia que estuda a hereditariedade e a
           variação dos seres vivos. Ela investiga como as características são
