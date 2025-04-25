@@ -1,8 +1,8 @@
 {
-  "name": "genetica",
+  "name": "Geneticabovina",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://DaviTirapeliVieira.github.io/GeneticaBovina",
+  "homepage": "https://geneticabovina.vercel.app",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
