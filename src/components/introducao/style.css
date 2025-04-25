@@ -1,0 +1,58 @@
+/*Inicio*/
+
+/* Seção da Introdução */
+
+.inicio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
+}
+
+/* Estilo do conteúdo (texto) */
+
+.content {
+  flex: 1;
+  max-width: 50%;
+}
+
+.titulo {
+  font-size: 4em;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 700;
+  color: #3fff69;
+  text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
+    1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191,
+    1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191,
+    1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4),
+    1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+    1px 30px 60px rgba(16, 16, 16, 0.4);
+}
+
+.content p {
+  padding: 1rem 0 0 3rem;
+  font-size: 1.8em;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* Estilo do container da hélice de DNA */
+
+#canvaDNA {
+  margin-top: 27rem;
+}
+
+@media screen and (max-width: 768px) {
+  .inicio {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .content {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+}
