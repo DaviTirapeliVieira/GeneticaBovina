@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Touro Brangus",
+    "image": "./brangus.jpg",
+    "description": "O Touro Brangus é conhecido pela sua resistência e adaptabilidade às diversas condições climáticas.",
+    "origin": "Brasil",
+    "breed": "Brangus"
+  },
+  {
+    "id": 2,
+    "name": "Touro Nelore",
+    "image": "./nelore.jpg",
+    "description": "O Nelore é uma das raças mais conhecidas no Brasil, com grande resistência ao calor e a doenças.",
+    "origin": "Brasil",
+    "breed": "Nelore"
+  },
+  {
+    "id": 3,
+    "name": "Touro Nelore Pintado",
+    "image": "./nelore-pintado.jpg",
+    "description": "Uma variação do Nelore, com pelagem diferente e características de adaptação ainda mais avançadas.",
+    "origin": "Brasil",
+    "breed": "Nelore Pintado"
+  },
+  {
+    "id": 4,
+    "name": "Touro Senepol",
+    "image": "./senepol.png",
+    "description": "A raça Senepol é conhecida pela sua habilidade de se adaptar às condições tropicais e pela qualidade de sua carne.",
+    "origin": "Caribe",
+    "breed": "Senepol"
+  },
+  {
+    "id": 5,
+    "name": "Touro Girolando",
+    "image": "./girolando.jpg",
+    "description": "O Girolando é uma raça mista, criada a partir do cruzamento entre as raças Gir e Holandesa.",
+    "origin": "Brasil",
+    "breed": "Girolando"
+  },
+  {
+    "id": 6,
+    "name": "Touro Marquejane",
+    "image": "./marquejane.jpg",
+    "description": "O Marquejane é uma raça especializada, com excelentes características de produção de carne e resistência.",
+    "origin": "Brasil",
+    "breed": "Marquejane"
+  }
+]

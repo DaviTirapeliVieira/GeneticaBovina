@@ -1,78 +1,65 @@
+import React, { useState } from "react";
 import "./style.css";
+import exemplaresData from "./exemplares.json"; // Supondo que o arquivo JSON esteja na mesma pasta
 
 export default function Exemplares() {
+  const [modalData, setModalData] = useState(null);
+
+  const openModal = (data) => {
+    setModalData(data);
+  };
+
+  const closeModal = () => {
+    setModalData(null);
+  };
+
   return (
     <div>
       <section id="exemplares" className="exemplares">
         <h2 className="section-title">Reprodutores</h2>
-        <div class="box-container">
-          <div class="box">
-            <img
-              src="./brangus.jpg"
-              alt="Touro Brangus"
-              className="gallery-img"
-            />
-            <div class="content">
-              <h3>Touro Brangus</h3>
+        <div className="box-container">
+          {exemplaresData.map((exemplar) => (
+            <div
+              key={exemplar.id}
+              className="box"
+              onClick={() => openModal(exemplar)}
+            >
+              <img
+                src={exemplar.image}
+                alt={exemplar.name}
+                className="gallery-img"
+              />
+              <div className="content">
+                <h3>{exemplar.name}</h3>
+              </div>
             </div>
-          </div>
-
-          <div class="box">
-            <img
-              src="./nelore.jpg"
-              alt="Touro Nelore"
-              className="gallery-img"
-            />
-            <div class="content">
-              <h3>Touro Nelore</h3>
-            </div>
-          </div>
-
-          <div class="box">
-            <img
-              src="./nelore-pintado.jpg"
-              alt="Touro Nelore Pintado"
-              className="gallery-img"
-            />
-            <div class="content">
-              <h3>Touro Nelore Pintado</h3>
-            </div>
-          </div>
-
-          <div class="box">
-            <img
-              src="./senepol.png"
-              alt="Touro Senepol"
-              className="gallery-img"
-            />
-            <div class="content">
-              <h3>Touro Senepol</h3>
-            </div>
-          </div>
-
-          <div class="box">
-            <img
-              src="./girolando.jpg"
-              alt="Touro Girolando"
-              className="gallery-img"
-            />
-            <div class="content">
-              <h3>Touro Girolando</h3>
-            </div>
-          </div>
-
-          <div class="box">
-            <img
-              src="./marquejane.jpg"
-              alt="Touro Marquejane"
-              className="gallery-img"
-            />
-            <div class="content">
-              <h3>Touro Marquejane</h3>
-            </div>
-          </div>
-
+          ))}
         </div>
+
+        {modalData && (
+          <div className="modal">
+            <div className="modal-content">
+              <span className="close" onClick={closeModal}>
+                &times;
+              </span>
+              <h2>{modalData.name}</h2>
+              <img
+                src={modalData.image}
+                alt={modalData.name}
+                className="modal-img"
+              />
+              <p>
+                <strong>Raça:</strong>  {modalData.breed}
+              </p>
+              <p>
+                <strong>Origem:</strong>  {modalData.origin}
+              </p>
+              <p>
+                {modalData.description}
+              </p>
+            </div>
+          </div>
+        )}
       </section>
     </div>
   );
